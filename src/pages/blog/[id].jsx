@@ -1,6 +1,12 @@
+import Head from "next/head";
+
 const Post = ({ post }) => {
   return (
     <div>
+      <Head>
+        <title>{post.title}</title>
+      </Head>
+
       <h1>Single Post: {post.title}</h1>
       <p>{post.publishedAt}</p>
       <p>{post.content}</p>

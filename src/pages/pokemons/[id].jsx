@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { useRouter } from "next/router";
 
 const PokemonSinglePage = ({ data }) => {
@@ -7,6 +8,10 @@ const PokemonSinglePage = ({ data }) => {
 
   return (
     <div>
+      <Head>
+        <title>{id}</title>
+      </Head>
+
       <h1>Single Pokemon Page: {id}</h1>
 
       <ol>

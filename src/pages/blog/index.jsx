@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Link from "next/link";
 
 const Page = ({ posts }) => {
@@ -5,6 +6,10 @@ const Page = ({ posts }) => {
 
   return (
     <div>
+      <Head>
+        <title>Elis Blog</title>
+      </Head>
+
       <h1>Hello from blog!</h1>
 
       <ul>
